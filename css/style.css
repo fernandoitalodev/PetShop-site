@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-color {
+  color: #e96336;
+}
+
+body {
+  background: linear-gradient(rgba(253, 252, 251, 0.9529411765), rgba(250, 249, 248, 0.8784313725)), url("../images/Mundopet-sem-bg.png");
+}
+
+.green-color {
+  color: rgb(75, 182, 75);
+}
+
+.flex-config {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  min-height: 15vh;
+  background-color: #ed9b2f;
+  display: flex;
+}
+nav .dropdown-menu {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.404);
+}
+nav .navbar-config {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+nav .logo {
+  padding: 0.1em;
+  height: 120px;
+}
+nav .nav-link {
+  color: rgb(90, 79, 79);
+  font-size: 1.3em;
+  font-weight: 400;
+  padding-right: 15px;
+  transition: 0.3s;
+}
+nav .nav-link:hover {
+  color: #e96336;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+main {
+  background-color: #ed9b2f;
+  background-image: url("../images/bg-home-sem-fundo.png");
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+  z-index: 1;
+}
+main .waves {
+  position: absolute;
+  z-index: -1;
+  bottom: -20px;
+}
+main .icon-fixed {
+  position: fixed;
+  right: 20px;
+  height: 50px;
+  bottom: 20px;
+  cursor: pointer;
+  -webkit-animation: upNdown 2s infinite linear;
+  animation: upNdown 2s infinite linear;
+}
+@-webkit-keyframes upNdown {
+  50% {
+    transform: translatey(-7px);
+  }
+}
+@keyframes upNdown {
+  50% {
+    transform: translatey(-7px);
+  }
+}
+main .main-text {
+  width: 60%;
+  color: #0b0b09;
+}
+main .main-text h1 {
+  font-size: 5em;
+  font-weight: 800;
+}
+main .main-text h2 {
+  font-weight: 600;
+}
+
+.about-us {
+  min-height: 100vh;
+  margin: 50px auto 0 auto;
+}
+.about-us .images-about .img-about {
+  height: 370px;
+}
+
+.services {
+  width: 85%;
+}
+.services .card-services {
+  margin: 1em;
+  min-height: 200px;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgb(173, 113, 64);
+}
+
+.maps-icon {
+  width: 50px;
+}
+
+.localization .localization-text h5 {
+  font-size: 1em;
+}
+.localization .localization-text h6 {
+  font-size: 0.7em;
+  font-style: italic;
+}
+.localization .localization-text .h6-localization {
+  background-color: rgba(204, 204, 201, 0.5333333333);
+  border-radius: 1em;
+  padding: 0.5em 2em;
+  margin: 1.5em 1em;
+}
+.localization .localization-text .maps .maps-img {
+  border-radius: 1em;
+  box-shadow: 1px 1px 3px black;
+  border: 10px solid rgba(219, 219, 219, 0.5333333333);
+}
+
+.contato {
+  padding: 1em;
+}
+.contato .opening-hours {
+  flex-direction: row;
+  box-shadow: 1px 1px 5px rgba(233, 99, 54, 0.4392156863);
+  padding: 0.5em 1em;
+  border-radius: 17px 20px 17px 20px;
+}
+.contato .opening-hours h6 {
+  font-weight: 300;
+  font-style: italic;
+}
+.contato .icon {
+  width: 30px;
+}
+.contato a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+.contato a:hover {
+  text-decoration: underline;
+}
+.contato .text-section-contato {
+  text-align: center;
+  margin-top: 2em;
+}
+.contato .text-section-contato a:hover {
+  text-decoration: none;
+}
+.contato .text-section-contato .btn-social-media {
+  margin: 0.5em;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  width: 250px;
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 0.5em;
+}
+.contato .text-section-contato .btn-whats {
+  border: 1px solid green;
+  color: green;
+}
+.contato .text-section-contato .btn-whats:hover {
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  transition: 0.3s;
+}
+.contato .text-section-contato .instagram-btn {
+  border: 1px solid #cd486b;
+  color: #cd486b;
+}
+.contato .text-section-contato .instagram-btn:hover {
+  transition: 0.3s;
+  background-color: #cd486b;
+  color: white;
+}
+
+.localization-and-contato {
+  background-color: rgb(247, 246, 246);
+  margin-top: 3em;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 1em;
+  border-radius: 23px;
+  box-shadow: 1px 1px 5px rgba(233, 99, 54, 0.4392156863), 1px 1px 5px rgba(48, 46, 46, 0.363);
+}
+
+.valores-e-visao {
+  min-height: 80vh;
+  width: 90%;
+  margin-inline: auto;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.valores-e-visao .div-valores-e-visao {
+  box-shadow: 1px 1px 3px rgb(173, 113, 64);
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.valores-e-visao .div-valores-e-visao h2 {
+  margin: 0.5em;
+}
+.valores-e-visao .div-valores-e-visao .icon-valores-e-visao {
+  height: 140px;
+}
+
+.grid-config {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+footer {
+  min-height: 10vh;
+  background-color: #ed9b2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer p {
+  padding-right: 1em;
+}
+footer .logo {
+  height: 100px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 769px) {
+  nav .logo {
+    padding: 0.1em;
+    height: 70px;
+  }
+  .grid-config {
+    grid-template-columns: auto;
+  }
+  main {
+    background: linear-gradient(rgba(237, 155, 47, 0.5960784314), rgba(237, 155, 47, 0.6980392157)), url("../images/Mundo-bg-p.png");
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  main .waves {
+    width: 100%;
+  }
+  main .main-text {
+    width: 100%;
+  }
+  main .main-text h1 {
+    font-size: 2.5em;
+  }
+  .about-us .images-about .img-about {
+    height: 170px;
+  }
+  .services {
+    width: 100%;
+  }
+  .services .card-services {
+    flex-direction: column;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: none;
+  }
+  .services .card-services .img-services {
+    padding: 0.5em;
+  }
+  .services .card-services img {
+    height: 100px;
+  }
+  .localization-and-contato {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+    box-shadow: none;
+  }
+  .contato h1 {
+    white-space: nowrap;
+  }
+  .contato .maps-icon {
+    height: 30px;
+  }
+  .contato .opening-hours {
+    flex-direction: column;
+    box-shadow: none;
+    padding: 0.5em 1em;
+    border-radius: 17px 20px 17px 20px;
+  }
+  .contato .opening-hours h6 {
+    padding-top: 0.5em;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .localization .localization-text .maps .maps-img {
+    border: 5px solid rgba(219, 219, 219, 0.5333333333);
+  }
+  .valores-e-visao {
+    min-height: 80vh;
+    width: 100%;
+    gap: 0;
+    flex-direction: column;
+  }
+  .valores-e-visao .div-valores-e-visao {
+    box-shadow: none;
+  }
+  .valores-e-visao .div-valores-e-visao .icon-valores-e-visao {
+    height: 100px;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media (min-width: 770px) and (max-width: 1024px) {
+  main {
+    height: 80vh;
+  }
+  main .main-text {
+    width: 60%;
+    color: #0b0b09;
+  }
+  main .main-text h1 {
+    font-size: 3em;
+    font-weight: 800;
+  }
+  main .main-text h2 {
+    font-weight: 500;
+  }
+  .services {
+    width: 100%;
+  }
+  .services .grid-config {
+    grid-template-columns: auto auto;
+  }
+  .services .card-services {
+    flex-direction: column;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: none;
+  }
+  .services .card-services .img-services {
+    padding: 0.5em;
+  }
+  .services .card-services img {
+    height: 100px;
+  }
+  .about-us .images-about .img-about {
+    height: 370px;
+  }
+}
+@media (min-width: 1450px) {
+  nav .dropdown-menu {
+    font-size: 2em;
+    padding: 1em;
+  }
+  nav .logo {
+    padding: 0.1em;
+    height: 270px;
+  }
+  nav .nav-link {
+    font-size: 2.5em;
+  }
+  main {
+    width: 100%;
+    height: 80vh;
+  }
+  main .main-text h1 {
+    font-size: 5em;
+  }
+  main .icon-fixed {
+    height: 100px;
+  }
+  .about-us h1,
+  .about-us h2 {
+    font-size: 5em;
+  }
+  .about-us p {
+    font-size: 2.5em;
+  }
+  .about-us h5 {
+    font-size: 2.5em;
+  }
+  .about-us .images-about .img-about {
+    height: 470px;
+  }
+  .services {
+    width: 90%;
+  }
+  .services .card-services {
+    flex-direction: column;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: none;
+  }
+  .services .card-services .img-services {
+    padding: 0.5em;
+  }
+  .services .card-services img {
+    height: 150px;
+  }
+  .services .card-services h2 {
+    font-size: 3em;
+  }
+  .services .card-services p {
+    font-size: 2em;
+  }
+  .contato h1 {
+    font-size: 4em;
+  }
+  .contato .maps-icon {
+    height: 30px;
+  }
+  .contato .opening-hours h6 {
+    font-size: 2em;
+    font-style: italic;
+  }
+  .localization .localization-text h6 {
+    font-size: 1.2em;
+  }
+  .valores-e-visao .div-valores-e-visao h2 {
+    font-size: 2.5em;
+  }
+  .valores-e-visao .div-valores-e-visao p {
+    font-size: 2em;
+  }
+  .valores-e-visao .div-valores-e-visao .icon-valores-e-visao {
+    height: 150px;
+  }
+  footer p {
+    padding-right: 1em;
+    font-size: 1.5em;
+  }
+  footer .logo {
+    height: 200px;
+  }
+  footer .btn-outline-dark {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
