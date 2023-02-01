@@ -10,6 +10,7 @@
 
 body {
   background: linear-gradient(rgba(253, 252, 251, 0.9529411765), rgba(250, 249, 248, 0.8784313725)), url("../images/Mundopet-sem-bg.png");
+  font-family: "Inter", sans-serif;
 }
 
 .green-color {
@@ -100,7 +101,7 @@ main .main-text {
   color: #0b0b09;
 }
 main .main-text h1 {
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 800;
 }
 main .main-text h2 {
@@ -295,6 +296,12 @@ footer a {
   main .main-text h1 {
     font-size: 2.5em;
   }
+  .about-us h1 {
+    font-size: 2.5em;
+  }
+  .about-us h5 {
+    font-size: 1em;
+  }
   .about-us .images-about .img-about {
     height: 170px;
   }
@@ -312,6 +319,12 @@ footer a {
   }
   .services .card-services img {
     height: 100px;
+  }
+  .services .card-services h2 {
+    font-size: 2em;
+  }
+  .services .card-services p {
+    color: rgb(54, 54, 54);
   }
   .localization-and-contato {
     margin-top: 0;
@@ -354,6 +367,9 @@ footer a {
   }
   footer {
     flex-direction: column;
+  }
+  footer p {
+    text-align: center;
   }
 }
 @media (min-width: 770px) and (max-width: 1024px) {

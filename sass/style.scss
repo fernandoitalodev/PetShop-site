@@ -10,6 +10,7 @@ $color-logo: #e96336;
 body {
   background: linear-gradient(#fdfcfbf3, #faf9f8e0),
     url("../images/Mundopet-sem-bg.png");
+    font-family: 'Inter', sans-serif;
 }
 .green-color {
   color: rgb(75, 182, 75);
@@ -107,7 +108,7 @@ main {
     width: 60%;
     color: #0b0b09;
     h1 {
-      font-size: 5em;
+      font-size: 4em;
       font-weight: 800;
     }
     h2 {
@@ -320,6 +321,12 @@ footer {
     }
   }
   .about-us {
+    h1{
+      font-size:2.5em;
+    }
+    h5{
+      font-size:1em;
+    }
     .images-about {
       .img-about {
         height: 170px;
@@ -338,6 +345,10 @@ footer {
       }
       img {
         height: 100px;
+      }h2{
+        font-size:2em;
+      }p{
+        color:rgb(54, 54, 54);
       }
     }
   }
@@ -368,7 +379,9 @@ footer {
     }
   }
   .localization {
+    
     .localization-text {
+      
       .maps {
         .maps-img {
           border: 5px solid #dbdbdb88;
@@ -391,6 +404,9 @@ footer {
   }
   footer {
     flex-direction: column;
+    p{
+      text-align:center;
+    }
   }
 }
 @media (min-width: 770px) and (max-width: 1024px) {
